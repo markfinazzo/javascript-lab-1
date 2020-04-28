@@ -7,10 +7,11 @@ let lifeEvents = ["I was born in Royal Oak, Mi.", "I used to print silkscreen co
 
 //Write an if/else statement that runs one of two console.log methods. Your console.log methods must incorporate the variables: name , age , and birthday .
 
-if (detroitGC = true) {
+if (detroitGC === true) {
     console.log(`My name is ${name} and I'm a student at Grand Circus in Detroit, Mi. I am currently ${age} and my birthday is ${birthday}`);
 
-} else if (detroitGC = !true) {
+} else {
+    console.log(`My name is ${name} and I'm a student at Grand Circus in Grand Rapids, Mi. I am currently ${age} and my birthday is ${birthday}`);
 }
 
 //Write a for loop that starts at 0 and iterates by increments of 1 while i is less than the length of the lifeEvents array. Each iteration of the loop should log a new sentence from the lifeEvents array. You should only have one console.log method.
@@ -19,14 +20,18 @@ for (let i = 0; i < lifeEvents.length; i++) {
 }
 
 let counter = 0;
-let randomNumber = 9
 
-    .innerHTML = Math.floor(Math.random() * 10) + 1;
+while (true) {
+    let randomNumber = innerHTML = Math.floor(Math.random() * 10) + 1;
+    if (randomNumber != 5) {
+        console.log(`${randomNumber} !===5`);
+    } else {
+        counter++;
+        console.log(`5===5. it took ${counter} iterations to randomly generate the number 5`);
+        break;
+    }
+}
 
-while (randomNumber !== 9) {
 
-} if (randomNumber != 9) {
-    console.log("randomNumber !==9");
-    
- else if (detroitGC = !true)
-        console.log("5 === 5. It took counter iterations to randomly generate the number 5.");
+
+
